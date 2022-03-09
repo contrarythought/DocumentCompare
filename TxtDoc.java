@@ -10,7 +10,7 @@ public class TxtDoc extends Documents {
     private FileReader inputStream;
     private FileWriter outputStream;
     private ArrayList<String> wordList;
-    public TxtDoc(String method, String file) throws FileNotFoundException, IOException {
+    public TxtDoc(String method, String file) {
         try {
             if(method.equalsIgnoreCase("read")) {
                 inputStream = new FileReader(file);
@@ -23,7 +23,7 @@ public class TxtDoc extends Documents {
             System.out.println(e);
         } catch(IOException e) {
             System.out.println(e);
-        } 
+        }
     }
 
     public ArrayList<String> getWordList() {
