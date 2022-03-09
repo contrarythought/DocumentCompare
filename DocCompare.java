@@ -31,9 +31,9 @@ public class DocCompare {
                 System.out.println("****DELETED****:\t" + s);
             } else {
                 if(map2.get(s) > map1.get(s)) {
-                    System.out.println("\tADDED " + (map2.get(s) - map1.get(s)) + " MORE OF:\t" + s);
+                    System.out.println("\tADDED " + (map2.get(s) - map1.get(s)) + " INSTANCES OF:\t" + s);
                 } else if(map2.get(s) < map1.get(s)) {
-                    System.out.println("\tDELETED " + (map1.get(s) - map2.get(s)) + " OF:\t" + s);
+                    System.out.println("\tDELETED " + (map1.get(s) - map2.get(s)) + " INSTANCES OF:\t" + s);
                 }
             }
         }
